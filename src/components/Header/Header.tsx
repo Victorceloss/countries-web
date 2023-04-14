@@ -8,10 +8,10 @@ export const Header = () => {
       <h1 className="header-title">Where in the world?</h1>
       <nav className="header-nav">
         <button className="nav-button" id="toggle-darkmode">
-          Dark Mode
+        <i className="fa-solid fa-moon"></i> Dark Mode
         </button>
         <button className="nav-button" id="github-button">
-          Github
+        <i className="fa-brands fa-github-alt"></i> Github
         </button>
       </nav>
     </header>
