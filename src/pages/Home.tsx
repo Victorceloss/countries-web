@@ -8,7 +8,10 @@ const Home: React.FC = (): JSX.Element => {
     <Header />
     <main className="main">
       <section className="main-section-search">
-        <input type="text" name="name-country" className="input-name" placeholder="Ex: United States..." />.
+        <input type="text" name="name-country" className="input-name" placeholder="Ex: United States..." />
+        <button className="button-search">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
       </section>
       <section className="main-section-all">
 
