@@ -10,6 +10,14 @@
   src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
+:root {
+  --TextColor: #000000;
+  --TextColorTwo: #1B1B1B;
+
+  --BackgroundOne: #FFFFFF;
+  --BackgroundTwo: #F2F2F2;
+}
+
 * {
   margin: 0;
   padding: 0;
