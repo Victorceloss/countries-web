@@ -1,5 +1,6 @@
 import React from "react";
 
+import '../styles/Home.css';
 import { Header } from "../components/Header/Header";
 
 const Home: React.FC = (): JSX.Element => {
