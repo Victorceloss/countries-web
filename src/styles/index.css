@@ -11,11 +11,11 @@
 }
 
 :root {
-  --TextColor: #000000;
-  --TextColorTwo: #1B1B1B;
+  --One: #000000;
+  --Two: #1B1B1B;
 
-  --BackgroundOne: #FFFFFF;
-  --BackgroundTwo: #F2F2F2;
+  --Three: #FFFFFF;
+  --Four: #F2F2F2;
 }
 
 * {
