@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import '../styles/Home.css';
 import { Header } from "../components/Header/Header";
+import { getAllCountriesData, Country } from "../services/restCountriesApi";
 
 const Home: React.FC = (): JSX.Element => {
+  const [allCountries, setAllCountries] = useState<Country[]>([]);
+
+  const setAllCountriesData = async (): Promise<void> => {
+    const countriesData = await getAllCountriesData();
+    setAllCountries(countriesData);
+  }
+
+  useEffect(() => {
+    setAllCountriesData();
+  }, []);
+
+  console.log(allCountries);
+
   return (
     <>
     <Header />
