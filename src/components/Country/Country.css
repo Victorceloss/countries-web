@@ -1,1 +1,21 @@
 @charset "UTF-8";
+
+.all-article {
+  padding: 0.5rem;
+  margin: 1.5rem 0;
+
+  cursor: pointer;
+
+  transform: scale(0.9);
+  transition: .5s ease all;
+
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.100);
+}
+
+.all-article:hover {
+  transform: scale(1);
+  transition: .5s ease all;
+
+  background-color: var(--Four);
+}
