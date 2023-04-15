@@ -2,13 +2,20 @@ import React, { useEffect, useState } from "react";
 
 import '../styles/Home.css';
 import { Header } from "../components/Header/Header";
-import { getAllCountriesData, Country } from "../services/restCountriesApi";
+import { getAllCountriesData} from "../services/restCountriesApi";
+import { Country } from "../components/Country/Country";
+
+interface Country {
+  name: string,
+  capital: string,
+  population: string
+}
 
 const Home: React.FC = (): JSX.Element => {
   const [allCountries, setAllCountries] = useState<Country[]>([]);
 
   const setAllCountriesData = async (): Promise<void> => {
-    const countriesData = await getAllCountriesData();
+    const countriesData: Country[] = await getAllCountriesData();
     setAllCountries(countriesData);
   }
 
@@ -29,7 +36,11 @@ const Home: React.FC = (): JSX.Element => {
         </button>
       </section>
       <section className="main-section-all">
-
+        {allCountries && allCountries.map((country, index) => {
+          return (
+            <Country countryData={country} key={index} />
+          )
+        })}
       </section>
     </main>
     </>
