@@ -1,1 +1,39 @@
 @charset "UTF-8";
+
+
+/* MAIN STYLE */
+.main {
+  padding: 0.5rem;
+  margin: 2.5rem 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SECTION SEARCH */
+.input-name {
+  width: 35rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+
+  font-size: 1.1rem;
+
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.button-search {
+  width: 5rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+
+  cursor: pointer;
+  font-size: 1.1rem;
+
+  outline: none ;
+  border-radius: 0.5rem;
+}
+
+/* SECTION ALL */
