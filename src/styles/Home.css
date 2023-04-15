@@ -20,8 +20,17 @@
 
   font-size: 1.1rem;
 
+  transition: .5s ease all;
+
   outline: none;
   border-radius: 0.5rem;
+  border: 1px solid var(--Two);
+}
+
+.input-name:focus {
+  transition: .5s ease all;
+
+  background-color: var(--Four);
 }
 
 .button-search {
@@ -32,8 +41,18 @@
   cursor: pointer;
   font-size: 1.1rem;
 
+  transition: .5s ease all;
+
   outline: none ;
   border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--One);
+}
+
+.button-search:hover {
+  transition: .5s ease all;
+
+  background-color: var(--Four);
 }
 
 /* SECTION ALL */
