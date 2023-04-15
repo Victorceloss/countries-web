@@ -1,13 +1,26 @@
 import React from "react";
 
+interface CountryData {
+  name: {
+    common: string,
+    official: string
+  }
+  capital: string,
+  population: number
+}
+
 type CountryProps = {
-  countryData: any;
+  countryData: CountryData;
 }
 
 export const Country: React.FC<CountryProps> = ({countryData}) => {
   return (
     <article className="all-article">
-      
+      <div className="article-text">
+        <h2 className="text-content">{countryData.name.common}</h2>
+        <h2 className="text-content">{countryData.population}</h2>
+        <h2 className="text-content">{countryData.capital}</h2>
+      </div>
     </article>
   );
 };
