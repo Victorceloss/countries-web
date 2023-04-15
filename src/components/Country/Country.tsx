@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Country.css';
+
 interface CountryData {
   name: {
     common: string,
