@@ -23,12 +23,12 @@ export const Country: React.FC<CountryProps> = ({countryData}) => {
   return (
     <article className="all-article">
       <div className="article-image">
-        <img src={countryData.flags.png} alt={countryData.flags.alt} />
+        <img src={countryData.flags.png} alt={countryData.flags.alt} className="image-content" />
       </div>
       <div className="article-text">
-        <h2 className="text-content">{countryData.name.common}</h2>
-        <h2 className="text-content">{countryData.population}</h2>
-        <h2 className="text-content">{countryData.capital}</h2>
+        <h2 className="text-content" id="country-name">{countryData.name.common}</h2>
+        <h2 className="text-content">Population: {countryData.population.toLocaleString("pt-BR")}</h2>
+        <h2 className="text-content">Capital: {countryData.capital}</h2>
       </div>
     </article>
   );
