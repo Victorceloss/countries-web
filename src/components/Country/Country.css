@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .all-article {
+  width: 25rem;
   padding: 0.5rem;
   margin: 1.5rem 0;
 
@@ -18,4 +19,18 @@
   transition: .5s ease all;
 
   background-color: var(--Four);
+}
+
+.image-content {width: 100%;}
+
+.article-text {padding: 0.5rem;}
+
+#country-name {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.text-content {
+  font-size: 1.6rem;
+  font-weight: normal;
 }
