@@ -1,6 +1,7 @@
 import React from "react";
 
 import './Country.css';
+import { Link } from "react-router-dom";
 
 interface CountryData {
   name: {
@@ -21,6 +22,7 @@ type CountryProps = {
 
 export const Country: React.FC<CountryProps> = ({countryData}) => {
   return (
+    <Link to={`/info/${countryData.name.common}`}>
     <article className="all-article">
       <div className="article-image">
         <img src={countryData.flags.png} alt={countryData.flags.alt} className="image-content" />
@@ -31,5 +33,6 @@ export const Country: React.FC<CountryProps> = ({countryData}) => {
         <h2 className="text-content">Capital: {countryData.capital}</h2>
       </div>
     </article>
+    </Link>
   );
 };
